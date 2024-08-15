@@ -1,0 +1,100 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #6dd5ed, #2193b0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: #fff;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 30px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+    color: #fff;
+}
+
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+label {
+    font-size: 1.1em;
+    margin-bottom: 5px;
+    display: block;
+    font-weight: bold;
+}
+
+input, select, button {
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: none;
+    width: 100%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    font-size: 1.1em;
+    transition: transform 0.2s ease-in-out;
+}
+
+input:focus, select:focus, button:hover {
+    transform: scale(1.05);
+}
+
+.custom-select {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+#convert-btn {
+    background-color: #ff6b6b;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#convert-btn:hover {
+    background-color: #ff4757;
+}
+
+#result {
+    margin-top: 30px;
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #fff;
+    transition: opacity 0.5s ease-in-out;
+}
+
+#result.fade-in {
+    opacity: 0;
+}
+
+#result.fade-in.show {
+    opacity: 1;
+}
